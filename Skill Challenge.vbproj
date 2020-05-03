@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E2B680E5-5759-4375-991B-CAC2F4A4A787}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>Skill_Challenge.Main</StartupObject>
+    <RootNamespace>Skill_Challenge</RootNamespace>
+    <AssemblyName>Skill Challenge</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Skill Challenge.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Skill Challenge.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Game1.vb" />
+    <Compile Include="Game2.vb" />
+    <Compile Include="Game3.vb" />
+    <Compile Include="Game4.vb" />
+    <Compile Include="Game5.vb" />
+    <Compile Include="Game6.vb" />
+    <Compile Include="Graphics.vb" />
+    <Compile Include="Main.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Words.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Clue Complete First Part %28105s%29.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Clue Intro%2821s%29.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Clue Second pitch raise 1 %2821s%29.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Clue Second Pitch Raise 2 %2821s%29.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Dramatic 1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Sparks.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Startle 1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Tension Build 1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Tension Build 2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Clue Complete First Part %28105s%29_01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Clue Intro%2821s%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Clue Second pitch raise 1 %2821s%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Clue Second Pitch Raise 2 %2821s%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Dramatic 1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Sparks.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Startle 1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Tension Build 1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Tension Build 2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Clue First Part shortened %2817s%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music %28can delete%29\Back In Toon - Swords.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music\Back In Toon - Swords.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music\Clue Complete First Part %28105s%29_01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music\Clue First Part shortened %2817s%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music\Clue Intro%2821s%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music\Clue Second pitch raise 1 %2821s%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music\Clue Second Pitch Raise 2 %2821s%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music\Dramatic 1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music\Sparks.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music\Startle 1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music\Tension Build 1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music\Tension Build 2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music\small harp arpeggio.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music\A Big Start - Finale.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music\Sad Trombones.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music\Mary France_01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music\Mary France_02.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music\Mary France_03.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music\Glass 01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Not yet used\A Big Start - Finale.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music\Bach Air 02.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music\Fool%27s Errand.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Music\Bach Air 01.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
